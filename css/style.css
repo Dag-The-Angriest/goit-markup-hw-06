@@ -505,9 +505,6 @@ header,
   background-color: #31d0aa;
 }
 
-.footer-third {
-}
-
 .footer-third-p {
   margin-bottom: 16px;
   font-weight: 500;
@@ -556,6 +553,10 @@ header,
   background-color: #4d5ae5;
   border: none;
   border-radius: 4px;
+}
+
+.footer-submit-svg {
+  margin-left: 16px;
 }
 
 .modal {
@@ -744,8 +745,4 @@ header,
   background-color: #4d5ae5;
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.form-send-svg {
-  margin-left: 16px;
 }
