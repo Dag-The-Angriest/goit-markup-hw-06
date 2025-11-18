@@ -745,3 +745,7 @@ header,
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.form-send-svg {
+  margin-left: 16px;
+}
