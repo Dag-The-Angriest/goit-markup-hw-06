@@ -660,7 +660,7 @@ header,
   border-color: #4d5ae5;
 }
 
-.modal-form-input:focus > .form-input-svg {
+.modal-form-input:focus + .form-input-svg {
   fill: #4d5ae5;
 }
 
