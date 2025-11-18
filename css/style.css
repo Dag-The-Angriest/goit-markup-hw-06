@@ -577,14 +577,14 @@ header,
   width: 408px;
   min-height: 584px;
   background: #fcfcfc;
-  box-shadow: зі значенням 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 72px 24px 24px 24px;
 }
 
-.modal-button {
+.modal-button-close {
   position: absolute;
   top: 24px;
   right: 24px;
@@ -602,10 +602,19 @@ header,
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-button:hover,
-.modal-button:focus {
+.modal-button-close:hover,
+.modal-button-close:focus {
   background-color: #404bbf;
   border: none;
+}
+
+.modal-button-close:hover,
+.modal-button-close:focus > .modal-svg-close {
+  fill: #ffffff;
+}
+
+.modal-svg-close {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-p {
@@ -650,6 +659,18 @@ header,
   border-color: #4d5ae5;
 }
 
+.modal-form-input:focus > .form-input-svg {
+  fill: #4d5ae5;
+}
+
+.form-input-svg {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .modal-comment {
   margin-bottom: 16px;
 }
@@ -676,6 +697,12 @@ header,
 
 .modal-checkbox {
   margin-bottom: 24px;
+}
+
+.modal-checkbox-input:checked + .modal-label-privacy > .privacy-span {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
 }
 
 .modal-label-privacy {
