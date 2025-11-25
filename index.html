@@ -48,6 +48,11 @@
             </li>
           </ul>
         </address>
+        <button class="nav-button-menu">
+          <svg class="nav-button-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -278,10 +283,10 @@
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                   · Cloud Storage App
                 </p>
-                <div class="portfolio-container">
-                  <h3 class="portfolio-h-card">Banking App</h3>
-                  <p class="portfolio-p">App</p>
-                </div>
+              </div>
+              <div class="portfolio-container">
+                <h3 class="portfolio-h-card">Banking App</h3>
+                <p class="portfolio-p">App</p>
               </div>
             </li>
             <li class="portfolio-item">
@@ -437,7 +442,7 @@
             <button type="submit" class="footer-form-button">
               Subscribe
               <svg class="footer-submit-svg" width="24" height="24">
-                <use href="./images/icons.svg#icon-close"></use>
+                <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
           </form>
@@ -451,7 +456,7 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <p class="modal-p"></p>
+        <p class="modal-p">Leave your contacts and we will call you back</p>
         <form>
           <div class="modal-form">
             <label for="user-name" class="modal-form-label">Name</label>
@@ -485,7 +490,7 @@
             <label for="user-email" class="modal-form-label">Email</label>
             <div class="modal-input-div">
               <input
-                type="text"
+                type="email"
                 id="user-email"
                 name="user-email"
                 class="modal-form-input"
@@ -513,16 +518,78 @@
               class="modal-checkbox-input visually-hidden"
             />
             <label for="user-privacy" class="modal-label-privacy"
+              ><span class="privacy-span"
+                ><svg class="form-checkbox-svg" width="16" height="16">
+                  <use
+                    href="./images/icons.svg#icon-checkbox2"
+                  ></use></svg></span
               >I accept the terms and conditions of the
-              <span class="privacy-span"
-                ><svg class="form-checkbox-svg" width="10" height="8">
-                  <use href="./images/icons.svg#icon-checkbox"></use></svg
-              ></span>
               <a href="#" class="privacy-link">Privacy Policy</a></label
             >
           </div>
           <button class="modal-form-button">Send</button>
         </form>
+      </div>
+    </div>
+    <div class="menu">
+      <div class="mobile-menu">
+        <button class="menu-button-close" type="button">
+          <svg class="modal-svg-close" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="nav-list-menu">
+          <li>
+            <a href="./index.html" class="nav-link-menu active-page">Studio</a>
+          </li>
+          <li><a href="" class="nav-link-menu">Portfolio</a></li>
+          <li><a href="" class="nav-link-menu">Contacts</a></li>
+        </ul>
+        <div>
+          <address class="address-menu">
+            <ul class="address-list-menu">
+              <li>
+                <a href="tel:+110001111111" class="e-address-menu telephone"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li>
+                <a href="mailto:info@devstudio.com" class="e-address-menu"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="footer-icons menu-icons">
+            <li class="footer-icon">
+              <a href="" class="footer-icon-link"
+                ><svg class="footer-icon-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use></svg
+              ></a>
+            </li>
+            <li class="footer-icon">
+              <a href="" class="footer-icon-link">
+                <svg class="footer-icon-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-icon">
+              <a href="" class="footer-icon-link">
+                <svg class="footer-icon-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-icon">
+              <a href="" class="footer-icon-link">
+                <svg class="footer-icon-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </body>
